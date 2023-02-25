@@ -1,0 +1,194 @@
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+body{
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+/* View Card Details Section */
+.view-card{
+    margin: 0;
+}
+
+.background-card{
+    position: absolute;
+    height: 120%;
+}
+
+.card-back{
+    position: absolute;
+    top: 60%;
+    left: 17%;
+    height: 30%;
+    width: 27%;
+}
+
+.card-front{
+    position: absolute;
+    top: 24%;
+    left: 12%;
+    height: 30%;
+    width: 27%;
+}
+
+.card-logo{
+    position: absolute;
+    top: 27%;
+    left: 14%;
+}
+
+.entered-details{
+    position: absolute;
+    color: white;
+}
+
+#cardholder-name-entered{
+    top: 48%;
+    left: 14%;
+}
+
+#card-number-entered{
+    top: 40%;
+    left: 14%;
+    font-size: 1.6em;
+}
+
+#exp-date-entered{
+    top: 48%;
+    left: 33%;
+}
+
+#cvc-entered{
+    top: 73%;
+    left: 39%;
+}
+
+/* Form Section */
+form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    top: 24%;
+    left: 55%;
+    justify-items: center;
+}
+
+#cardholder-name{
+    background-color: white;
+}
+
+.form-input{
+    height: 2.7em;
+    width: 25em;
+    /* margin-bottom: 2em; */
+}
+
+.confirm-button{
+    position: absolute;
+    background-color: var(--very-dark-violet);
+    top: 74%;
+    left: 57.5%;
+    width: 26em;
+    height: 2.7em;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.form-label{
+    margin-bottom: 0.3em;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    font-style: bold;
+}
+
+input{
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding-left: 1em;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+input:focus{
+    outline: none !important;
+    border: 1px solid var(--very-dark-violet);
+}
+
+.exp-date-cvc-input{
+    display: flex;
+    margin-top: 0.3em;
+}
+
+#month, #year{
+    width: 5em;
+    margin-right: 2em;
+}
+
+#cvc{
+    width: 8.1em;
+}
+
+#cvc-label{
+    margin-left: 5em;
+}
+
+::placeholder{
+    margin-left: 1em;
+    opacity: 50%;
+}
+
+.not-blank{
+    margin: 0;
+    color: red;
+    font-size: 0.7em;
+    margin: 0.5em 0 0.5em 0;
+}
+
+#cardholder-name-blank{
+    visibility: collapse;
+}
+
+#exp-date-blank{
+    width: 50%;
+    visibility: hidden;
+}
+
+#cvc-blank{
+    position: relative;
+    width: 50%;
+    margin-top: -5.3%;
+    left: 63.5%;
+    visibility: hidden;
+}
+
+#card-number-blank{
+    visibility: hidden;
+}
+
+.completed{
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    text-align: center;
+    visibility: hidden;
+}
+
+.continue-btn{
+    background-color: var(--very-dark-violet);
+    width: 26em;
+    height: 2.7em;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 2em;
+    visibility: hidden;
+}
