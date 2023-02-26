@@ -14,6 +14,7 @@ body{
 /* View Card Details Section */
 .view-card{
     margin: 0;
+    font-size: calc(0.5rem + 0.5vw);
 }
 
 .background-card{
@@ -27,6 +28,7 @@ body{
     left: 17%;
     height: 30%;
     width: 27%;
+    min-width: calc(3rem + 4vw);
 }
 
 .card-front{
@@ -86,7 +88,7 @@ form{
 
 .form-input{
     height: 2.7em;
-    width: 25em;
+    width: calc(10rem + 13vw);
     /* margin-bottom: 2em; */
 }
 
@@ -105,7 +107,7 @@ form{
 
 .form-label{
     margin-bottom: 0.3em;
-    font-size: 0.8em;
+    font-size: calc(0.5rem + 0.5vw);
     letter-spacing: 0.2em;
     font-style: bold;
 }
@@ -128,16 +130,17 @@ input:focus{
 }
 
 #month, #year{
-    width: 5em;
+    width: calc(2rem + 3vw);
     margin-right: 2em;
 }
 
 #cvc{
-    width: 8.1em;
+    width: calc(2rem + 4vw);
 }
 
 #cvc-label{
-    margin-left: 5em;
+    position: absolute;
+    margin-left: 17%;
 }
 
 ::placeholder{
