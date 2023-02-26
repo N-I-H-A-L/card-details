@@ -28,7 +28,7 @@ body{
     left: 17%;
     height: 30%;
     width: 27%;
-    min-width: calc(3rem + 4vw);
+    min-width: calc(5rem + 7vw);
 }
 
 .card-front{
@@ -93,11 +93,12 @@ form{
 }
 
 .confirm-button{
-    position: absolute;
+    position: relative;
     background-color: var(--very-dark-violet);
-    top: 74%;
-    left: 57.5%;
-    width: 26em;
+    margin-top: 10%; 
+
+    align-self: center;
+    width: 20em;
     height: 2.7em;
     border-radius: 5px;
     border: none;
@@ -194,4 +195,18 @@ input:focus{
     cursor: pointer;
     margin-top: 2em;
     visibility: hidden;
+}
+
+@media (max-width: 850px) or (max-height: 475px){
+    .background-card{
+        visibility: hidden;
+    }
+    form{
+        top: 90%;
+        left: 20%;
+    }
+    .completed{
+        top: 90%;
+        left: 20%;
+    }
 }
